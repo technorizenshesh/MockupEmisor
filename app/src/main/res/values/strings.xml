@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">MockupEmisor</string>
+    <string name="name_surname">Nombres y apellidos</string>
+    <string name="password">Contraseña</string>
+    <string name="repeat_password">Repetir contraseña</string>
+    <string name="social_notes">Regístrate con tus redes sociales</string>
+    <string name="next">SIGUIENTE</string>
+    <string name="registration">REGISTRO</string>
+    <string name="help">Ayuda</string>
+    <string name="mobile_regis">REGISTRA TU NÚMERO TELEFÓNICO</string>
+    <string name="enter_your_code">INGRESA TU CÓDIGO</string>
+    <string name="continue_">CONTINUAR</string>
+    <string name="forgot_password">Olvidé mi contraseña</string>
+    <string name="type_your_password">Digita tu contraseña \npara ingresar</string>
+    <string name="login_to">Para iniciar sesión en Sefue \ningresa la contraseña con la que te registraste</string>
+    <string name="we_carry_with_love">Lo llevamos con amor</string>
+    <string name="your_is_the_best_hands">Tu mandado en las mejores manos</string>
+    <string name="start">INICIAR</string>
+    <string name="live_the_experience">Vive la experiencia \n¡Confía!</string>
+    <string name="safe_and_fast">Tú mandado seguro y rápido, eso es felicidad.</string>
+    <string name="you_are_the_part">Eres parte de la innovación \ny la eficiencia</string>
+    <string name="whole_community">Toda una comunidad de viajeros a tu disposición.</string>
+    <string name="are_you_win">"Ganas mandando! \nAhora... \nGanas llevando! "</string>
+    <string name="safe_travller">Sé un viajero SEFUE inscríbete aquí.</string>
+    <string name="what_you_send">"¿Y hoy qué vas a mandar? "</string>
+    <string name="response">Disponibles 7x24</string>
+    <string name="make_your_orders">HAZ TUS MANDADOS</string>
+</resources>

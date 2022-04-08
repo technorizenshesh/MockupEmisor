@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:fontFamily="@font/irc_demi"
+            android:gravity="center_horizontal"
+            android:text="@string/what_you_send"
+            android:textColor="@color/color_black_light"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14sdp" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_300sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/ic_available" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:fontFamily="@font/irc_demi"
+            android:gravity="center_horizontal"
+            android:text="@string/response"
+            android:textColor="@color/color_black_light"
+            android:textStyle="bold"
+            android:textSize="@dimen/_16sdp" />
+
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            app:cardCornerRadius="@dimen/_30sdp"
+            app:cardElevation="@dimen/_2sdp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_black_light"
+                android:fontFamily="@font/irc_demi"
+                android:gravity="center"
+                android:text="@string/make_your_orders"
+                android:textColor="@color/color_btn"
+                android:textSize="@dimen/_12sdp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</layout>
