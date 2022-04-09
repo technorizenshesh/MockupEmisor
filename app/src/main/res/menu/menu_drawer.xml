@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <item
+            android:id="@+id/nav_errand"
+            android:icon="@drawable/ic_nav_one"
+            android:title="@string/create_your_errand" />
+
+        <item
+            android:id="@+id/nav_manados"
+            android:title="Mis mandados"
+            android:icon="@drawable/ic_nav_two"
+            android:visible="true">
+
+            <menu>
+
+                <group android:checkableBehavior="single"
+                    android:id="@+id/SetupGroup"
+                    android:visible="true">
+
+                <item
+                    android:id="@+id/nav_ruta"
+                    android:icon="@drawable/ic_nav_three"
+                    android:title="Mandado en ruta" />
+                <item
+                    android:id="@+id/nav_completed"
+                    android:icon="@drawable/ic_nav_four"
+                    android:title="Mandado finalizado" />
+
+
+                <item
+                    android:id="@+id/nav_slope"
+                    android:icon="@drawable/ic_nav_five"
+                    android:title="Mandado pendiente" />
+
+
+                <item
+                    android:id="@+id/nav_scheduled"
+                    android:icon="@drawable/ic_nav_six"
+                    android:title="Mandado programados" />
+
+                </group>
+
+            </menu>
+        </item>
+
+
+
+
+    <item
+        android:id="@+id/nav_myPoints"
+        android:icon="@drawable/ic_nav_seven"
+        android:title="Mis puntos" />
+
+
+    <item
+        android:id="@+id/nav_myCoupon"
+        android:icon="@drawable/ic_nav_eight"
+        android:title="Mis cupones" />
+
+
+    <item
+        android:id="@+id/nav_paymentMethod"
+        android:icon="@drawable/ic_nav_eight1"
+        android:title="Métodos de pago" />
+
+
+    <item
+        android:id="@+id/nav_travller"
+        android:icon="@drawable/ic_nav_nine"
+        android:title="Ser viajero" />
+
+    <item
+        android:id="@+id/nav_deliveryNew"
+        android:icon="@drawable/ic_nav_ten"
+        android:title="Novedades de entrega" />
+
+    <item
+        android:id="@+id/nav_help"
+        android:icon="@drawable/ic_nav_eleven"
+        android:title="Ayuda" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_nav_twelve"
+        android:title="Configurar perfil" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_nav_thirteen"
+        android:title="Cerrar sesión" />
+
+
+</menu>
+

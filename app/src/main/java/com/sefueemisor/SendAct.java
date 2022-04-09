@@ -1,5 +1,6 @@
 package com.sefueemisor;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -19,5 +20,9 @@ public class SendAct extends AppCompatActivity {
     }
 
     private void initViews() {
+        binding.btnNext.setOnClickListener(v -> {
+            startActivity(new Intent(this,HomeAct.class));
+            finish();
+        });
     }
 }

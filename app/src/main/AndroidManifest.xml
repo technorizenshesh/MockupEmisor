@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MockupEmisor">
         <activity
-            android:name="com.sefueemisor.SplashAct"
+            android:name=".SplashAct"
             android:exported="true"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -19,35 +19,34 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
-        <activity android:name="com.sefueemisor.WelcomeAct"
+        <activity
+            android:name=".WelcomeAct"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-
-
-        <activity android:name="com.sefueemisor.SignupAct"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SignupAct"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-
-        <activity android:name="com.sefueemisor.MobileRisAct"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MobileRisAct"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-
-
-        <activity android:name="com.sefueemisor.MobilrVerifyAct"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MobilrVerifyAct"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-
-        <activity android:name="com.sefueemisor.PasswordAct"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PasswordAct"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-
-        <activity android:name="com.sefueemisor.SendAct"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SendAct"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-
-
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HomeAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
