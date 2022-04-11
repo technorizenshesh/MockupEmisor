@@ -13,7 +13,7 @@
             android:icon="@drawable/ic_nav_two"
             android:visible="true">
 
-            <menu>
+          <!--  <menu>
 
                 <group android:checkableBehavior="single"
                     android:id="@+id/SetupGroup"
@@ -42,7 +42,7 @@
 
                 </group>
 
-            </menu>
+            </menu>-->
         </item>
 
 

@@ -37,4 +37,22 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="profile">Configurar perfil</string>
+    <string name="mi_profil">Mi perfil</string>
+    <string name="about_sefue">Acerca de Sefue</string>
+    <string name="terms_conditions">Términos y condiciones</string>
+    <string name="idiom">Idioma</string>
+    <string name="notifications">Notificaciones</string>
+    <string name="sign_off">CERRAR SESIÓN</string>
+    <string name="help_two">Mi mandado llegó en mal estado</string>
+    <string name="help_one">Mi mandado no llegó a su destino</string>
+    <string name="cupones">Cupones</string>
+    <string name="cupones_text">Tienes un cupón disponible, con descuento.</string>
+    <string name="payment_method">MÉTODOS DE PAGO</string>
+    <string name="see_payment_method">Aquí puedes ver tus métodos de pago</string>
+    <string name="add_payment_method">Añadir forma de pago</string>
+    <string name="credit_debit">Tarjeta de crédito/débito</string>
+    <string name="promotion">Promoción</string>
+    <string name="cash">Efectivo</string>
+    <string name="no_cupons_available">No tienes más cupones disponibles</string>
 </resources>
