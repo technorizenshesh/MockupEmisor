@@ -55,4 +55,22 @@
     <string name="promotion">Promoción</string>
     <string name="cash">Efectivo</string>
     <string name="no_cupons_available">No tienes más cupones disponibles</string>
+    <string name="dimension">DIMENSIONES DEL MANDADO</string>
+    <string name="enter_dimension">Ingresa los datos del mandado \nque vamos a llevar.</string>
+    <string name="alto">Alto</string>
+    <string name="achho">Ancho</string>
+    <string name="largo">Largo</string>
+    <string name="peso">Peso</string>
+    <string name="quantity">Piezas</string>
+    <string name="order_details">DETALLES DEL MANDADO</string>
+    <string name="enter_order_details">Ingresa los detalles del mandado \nque vamos a llevar</string>
+
+
+
+    <string name="api_key">AIzaSyAXTJrvnDTC8AjYzK2dPatsSAMJaTIc-c0</string>
+
+
+    <!-- Key for places and route draw -->
+    <string name="place_api_key">AIzaSyC4Eg_qGdkZrcW-td6QsmJAk2g4nzPaat0</string>
+
 </resources>

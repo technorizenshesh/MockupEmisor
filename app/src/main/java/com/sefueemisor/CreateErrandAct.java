@@ -21,6 +21,6 @@ public class CreateErrandAct extends AppCompatActivity {
     private void initViews() {
         binding.ivBack.setOnClickListener(v -> finish());
 
-       // binding.btnNext.setOnClickListener(v -> startActivity(new Intent(this,ErrandSecondAct.class)));
+        binding.btnNext.setOnClickListener(v -> startActivity(new Intent(this,DimensionAct.class)));
     }
 }

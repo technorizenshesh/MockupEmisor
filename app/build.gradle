@@ -45,6 +45,8 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
     implementation 'androidx.navigation:navigation-fragment:2.4.1'
     implementation 'androidx.navigation:navigation-ui:2.4.1'
+    implementation 'com.google.android.gms:play-services-maps:18.0.2'
+    implementation 'com.github.developeramit3:ApiCall:8f4053a663'
 
 
     testImplementation 'junit:junit:4.+'

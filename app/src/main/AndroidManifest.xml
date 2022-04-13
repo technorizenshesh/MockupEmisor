@@ -87,11 +87,34 @@
             android:name=".ErrandSecondAct"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".CreateErrandAct"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DimensionAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CommandCreateAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ProDetailAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TravllerFindAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/api_key" />
+
     </application>
 
 </manifest>
