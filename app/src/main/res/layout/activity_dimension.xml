@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:background="@drawable/rounded_light_black_bg">
+
+
+                <RelativeLayout
+                    android:id="@+id/layoutOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_margin="@dimen/_5sdp"
+
+                    >
+
+
+                    <ImageView
+                        android:id="@+id/ivBack"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:padding="@dimen/_5sdp"
+
+                        android:src="@drawable/ic_back" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:layout_toLeftOf="@+id/btHelp"
+                        android:fontFamily="@font/irc_demi"
+                        android:text="@string/dimension"
+                        android:textColor="@color/color_btn"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold" />
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btHelp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="@dimen/_7sdp"
+                        app:cardCornerRadius="@dimen/_30sdp"
+                        app:cardElevation="@dimen/_2sdp">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_btn"
+                            android:fontFamily="@font/irc_demi"
+                            android:gravity="center"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:paddingEnd="@dimen/_10sdp"
+                            android:text="@string/help"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layoutOne"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/irc_demi"
+                    android:gravity="center_horizontal"
+                    android:text="@string/enter_dimension"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11sdp" />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_12sdp"
+                    android:fontFamily="@font/irc_demi"
+                    android:gravity="center_horizontal"
+                    android:text="Digita las dimensiones de tu mandado"
+                    android:textColor="@color/color_black_light"
+                    android:textSize="@dimen/_14sdp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/doted_line" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".3"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_7sdp"
+                            android:src="@drawable/ic_alto" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_7sdp"
+                            android:gravity="center_vertical"
+                            android:text="@string/alto"
+                            android:textColor="@color/color_black_light"
+                            android:textSize="@dimen/_14sdp"
+
+                            />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1">
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".25"
+                        android:background="@drawable/rounded_white_gray_bg">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:fontFamily="@font/irc_demi"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textColor="@color/color_black_light"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1">
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".25"
+                        android:background="@drawable/rounded_white_gray_bg">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:fontFamily="@font/irc_demi"
+                            android:gravity="center"
+                            android:text="cm"
+                            android:textColor="@color/color_black_light"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/doted_line" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".3"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_7sdp"
+                            android:src="@drawable/ic_achho" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_7sdp"
+                            android:gravity="center_vertical"
+                            android:text="@string/achho"
+                            android:textColor="@color/color_black_light"
+                            android:textSize="@dimen/_14sdp"
+
+                            />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1">
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".25"
+                        android:background="@drawable/rounded_white_gray_bg">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:fontFamily="@font/irc_demi"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textColor="@color/color_black_light"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1">
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".25"
+                        android:background="@drawable/rounded_white_gray_bg">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:fontFamily="@font/irc_demi"
+                            android:gravity="center"
+                            android:text="cm"
+                            android:textColor="@color/color_black_light"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/doted_line" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".3"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_7sdp"
+                            android:src="@drawable/ic_largo" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_7sdp"
+                            android:gravity="center_vertical"
+                            android:text="@string/largo"
+                            android:textColor="@color/color_black_light"
+                            android:textSize="@dimen/_14sdp"
+
+                            />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1">
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".25"
+                        android:background="@drawable/rounded_white_gray_bg">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:fontFamily="@font/irc_demi"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textColor="@color/color_black_light"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1">
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".25"
+                        android:background="@drawable/rounded_white_gray_bg">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:fontFamily="@font/irc_demi"
+                            android:gravity="center"
+                            android:text="cm"
+                            android:textColor="@color/color_black_light"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/doted_line" />
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_12sdp"
+                    android:fontFamily="@font/irc_demi"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="Digita el peso de tu mandado"
+                    android:textColor="@color/color_black_light"
+                    android:textSize="@dimen/_14sdp" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".3"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_7sdp"
+                            android:src="@drawable/ic_peso" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:gravity="center_vertical"
+                            android:text="@string/peso"
+                            android:textColor="@color/color_black_light"
+                            android:textSize="@dimen/_14sdp"
+
+                            />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1">
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".25"
+                        android:background="@drawable/rounded_white_gray_bg">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:fontFamily="@font/irc_demi"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textColor="@color/color_black_light"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1">
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".25"
+                        android:background="@drawable/rounded_white_gray_bg">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:fontFamily="@font/irc_demi"
+                            android:gravity="center"
+                            android:text="kg"
+                            android:textColor="@color/color_black_light"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/doted_line" />
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/doted_line" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_12sdp"
+                    android:fontFamily="@font/irc_demi"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="Digita cuántas piezas vas a mandar"
+                    android:textColor="@color/color_black_light"
+                    android:textSize="@dimen/_14sdp" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".3"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_7sdp"
+                            android:src="@drawable/ic_quantity" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:gravity="center_vertical"
+                            android:text="@string/quantity"
+                            android:textColor="@color/color_black_light"
+                            android:textSize="@dimen/_14sdp"
+
+                            />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".25">
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".25"
+                        android:background="@drawable/rounded_white_gray_bg">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:fontFamily="@font/irc_demi"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textColor="@color/color_black_light"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1">
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        android:background="@drawable/rounded_white_gray_bg">
+
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/doted_line" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btnNext"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginVertical="20dp"
+                    app:cardCornerRadius="@dimen/_30sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_black_light"
+                        android:elevation="5dp"
+                        android:gravity="center"
+                        android:text="INGRESAR DATOS"
+                        android:textAlignment="center"
+                        android:textColor="@color/color_btn"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</layout>
