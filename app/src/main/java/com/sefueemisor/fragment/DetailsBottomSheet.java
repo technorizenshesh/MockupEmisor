@@ -1,6 +1,7 @@
 package com.sefueemisor.fragment;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -18,6 +19,7 @@ import androidx.databinding.DataBindingUtil;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
+import com.sefueemisor.ChooseTravllerAct;
 import com.sefueemisor.CommandCreateAct;
 import com.sefueemisor.R;
 import com.sefueemisor.databinding.FragmentDetailsBinding;
@@ -52,13 +54,14 @@ public class DetailsBottomSheet extends BottomSheetDialogFragment {
     }
 
     private void initViews() {
+         binding.btnNext.setOnClickListener(v -> dialogNotFound());
     }
 
 
-    public void dialogOne(){
+    public void dialogNotFound(){
         Dialog dialog = new Dialog(getActivity(),android.R.style.Theme_Translucent_NoTitleBar);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        dialog.setContentView(R.layout.dialog_one);
+        dialog.setContentView(R.layout.dialog_service_not_found);
 
         ImageView ivCancel = dialog.findViewById(R.id.ivCancel);
 
@@ -68,6 +71,12 @@ public class DetailsBottomSheet extends BottomSheetDialogFragment {
 
         ivCancel.setOnClickListener(v -> {
             dialog.dismiss();
+
+        });
+
+        btnOne.setOnClickListener(v -> {
+            dialog.dismiss();
+            dialog();
 
         });
 
@@ -83,6 +92,73 @@ public class DetailsBottomSheet extends BottomSheetDialogFragment {
     }
 
 
+    public void dialog(){
+        Dialog dialog = new Dialog(getActivity(),android.R.style.Theme_Translucent_NoTitleBar);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.dialog_waiting_list);
+
+        ImageView ivCancel = dialog.findViewById(R.id.ivCancel);
+
+        TextView btnOne = dialog.findViewById(R.id.btnOne);
+
+        ivCancel.setOnClickListener(v -> {dialog.dismiss();});
+
+        ivCancel.setOnClickListener(v -> {
+            dialog.dismiss();
+
+        });
+
+        btnOne.setOnClickListener(v -> {
+            dialog.dismiss();
+            dialogCancelService();
+
+        });
+
+
+        Window window = dialog.getWindow();
+        WindowManager.LayoutParams wlp = window.getAttributes();
+
+        wlp.gravity = Gravity.CENTER;
+        wlp.flags &= ~WindowManager.LayoutParams.FLAG_BLUR_BEHIND;
+        window.setAttributes(wlp);
+        dialog.getWindow().setLayout(LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.MATCH_PARENT);
+        dialog.show();
+    }
+
+
+
+    public void dialogCancelService(){
+        Dialog dialog = new Dialog(getActivity(),android.R.style.Theme_Translucent_NoTitleBar);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.dialog_cancel_service);
+
+        ImageView ivCancel = dialog.findViewById(R.id.ivCancel);
+
+        TextView btnOne = dialog.findViewById(R.id.btnOne);
+
+        ivCancel.setOnClickListener(v -> {dialog.dismiss();});
+
+        ivCancel.setOnClickListener(v -> {
+            dialog.dismiss();
+
+        });
+
+        btnOne.setOnClickListener(v -> {
+            dialog.dismiss();
+            startActivity(new Intent(getActivity(), ChooseTravllerAct.class));
+
+        });
+
+
+        Window window = dialog.getWindow();
+        WindowManager.LayoutParams wlp = window.getAttributes();
+
+        wlp.gravity = Gravity.CENTER;
+        wlp.flags &= ~WindowManager.LayoutParams.FLAG_BLUR_BEHIND;
+        window.setAttributes(wlp);
+        dialog.getWindow().setLayout(LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.MATCH_PARENT);
+        dialog.show();
+    }
 
 
 
