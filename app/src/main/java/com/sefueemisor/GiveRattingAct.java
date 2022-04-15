@@ -14,28 +14,29 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
-import com.sefueemisor.databinding.ActvityOrderVerifyBinding;
+import com.sefueemisor.databinding.ActivityGiveRateBinding;
 
-public class ProductVeriAct extends AppCompatActivity {
-    ActvityOrderVerifyBinding binding;
+public class GiveRattingAct extends AppCompatActivity {
+    ActivityGiveRateBinding binding;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-     binding = DataBindingUtil.setContentView(this,R.layout.actvity_order_verify);
+     binding = DataBindingUtil.setContentView(this,R.layout.activity_give_rate);
      initViews();
     }
 
     private void initViews() {
+
         binding.ivBack.setOnClickListener(v -> finish());
 
-        binding.btnVerify.setOnClickListener(v -> {dialogTravel();});
+        binding.btnNext.setOnClickListener(v -> {dialogNews();});
     }
 
 
-    public void dialogTravel(){
-        Dialog dialog = new Dialog(ProductVeriAct.this,android.R.style.Theme_Translucent_NoTitleBar);
+    public void dialogNews(){
+        Dialog dialog = new Dialog(GiveRattingAct.this,android.R.style.Theme_Translucent_NoTitleBar);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        dialog.setContentView(R.layout.dialog_delivered);
+        dialog.setContentView(R.layout.dialog_news);
 
         ImageView ivCancel = dialog.findViewById(R.id.ivCancel);
 
@@ -45,10 +46,9 @@ public class ProductVeriAct extends AppCompatActivity {
 
         btnOne.setOnClickListener(v -> {
             dialog.dismiss();
-            startActivity(new Intent(ProductVeriAct.this,GiveRattingAct.class));
+
 
         });
-
         ivCancel.setOnClickListener(v -> {
             dialog.dismiss();
 
@@ -64,5 +64,6 @@ public class ProductVeriAct extends AppCompatActivity {
         dialog.getWindow().setLayout(LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.MATCH_PARENT);
         dialog.show();
     }
+
 
 }

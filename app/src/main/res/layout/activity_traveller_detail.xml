@@ -99,9 +99,7 @@
                 android:fontFamily="@font/irc_demi"
                 android:gravity="center_horizontal"
                 android:text="Aquí puedes escoger el viajero que va a llevar
-\ntu mandado
-
-"
+\ntu mandado"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_11sdp" />
 

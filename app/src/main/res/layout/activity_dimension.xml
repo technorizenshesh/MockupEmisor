@@ -118,7 +118,9 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
                     android:background="@drawable/doted_line" />
 
 
@@ -223,9 +225,10 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:background="@drawable/doted_line" />
+                    android:layout_height="@dimen/_2sdp"
+                    android:background="@drawable/doted_line"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"/>
 
 
                 <LinearLayout
@@ -325,12 +328,12 @@
 
                 </LinearLayout>
 
-
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:background="@drawable/doted_line" />
+                    android:layout_height="@dimen/_2sdp"
+                    android:background="@drawable/doted_line"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"/>
 
 
                 <LinearLayout
@@ -433,25 +436,23 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:background="@drawable/doted_line" />
-
-
+                    android:layout_height="@dimen/_2sdp"
+                    android:background="@drawable/doted_line"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"/>
 
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
                     android:layout_margin="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
                     android:fontFamily="@font/irc_demi"
                     android:gravity="center_horizontal"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="@dimen/_15sdp"
                     android:text="Digita el peso de tu mandado"
                     android:textColor="@color/color_black_light"
                     android:textSize="@dimen/_14sdp" />
-
 
 
                 <LinearLayout
@@ -552,33 +553,26 @@
                 </LinearLayout>
 
 
-
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:background="@drawable/doted_line" />
+                    android:layout_height="@dimen/_2sdp"
+                    android:background="@drawable/doted_line"
+                    android:layout_marginTop="@dimen/_10sdp"/>
 
 
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:background="@drawable/doted_line" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
                     android:layout_margin="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
                     android:fontFamily="@font/irc_demi"
                     android:gravity="center_horizontal"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="@dimen/_15sdp"
                     android:text="Digita cuántas piezas vas a mandar"
                     android:textColor="@color/color_black_light"
                     android:textSize="@dimen/_14sdp" />
-
 
 
                 <LinearLayout
@@ -659,10 +653,7 @@
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight=".1"
-                        android:background="@drawable/rounded_white_gray_bg">
-
-
+                        android:layout_weight=".1">
 
 
                     </LinearLayout>
@@ -673,9 +664,10 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:background="@drawable/doted_line" />
+                    android:layout_height="@dimen/_2sdp"
+                    android:background="@drawable/doted_line"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"/>
 
 
                 <androidx.cardview.widget.CardView

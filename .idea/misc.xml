@@ -27,6 +27,7 @@
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/activity_errand_second.xml" value="0.1398148148148148" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/activity_find_traveller.xml" value="0.17657657657657658" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/activity_follow_command.xml" value="0.17657657657657658" />
+        <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/activity_give_rate.xml" value="0.17657657657657658" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/activity_home.xml" value="0.1" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/activity_mobile.xml" value="0.20416666666666666" />
@@ -48,6 +49,8 @@
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/content_main.xml" value="0.1" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/dialog_call_trave.xml" value="0.17657657657657658" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/dialog_cancel_service.xml" value="0.17657657657657658" />
+        <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/dialog_delivered.xml" value="0.1" />
+        <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/dialog_news.xml" value="0.17657657657657658" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/dialog_one.xml" value="0.12" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/dialog_service_not_found.xml" value="0.15855855855855855" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/dialog_two.xml" value="0.17657657657657658" />
