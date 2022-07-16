@@ -6,6 +6,7 @@
     <string name="social_notes">Regístrate con tus redes sociales</string>
     <string name="next">SIGUIENTE</string>
     <string name="registration">REGISTRO</string>
+    <string name="login">ACCESO</string>
     <string name="help">Ayuda</string>
     <string name="mobile_regis">REGISTRA TU NÚMERO TELEFÓNICO</string>
     <string name="enter_your_code">INGRESA TU CÓDIGO</string>
@@ -21,7 +22,9 @@
     <string name="you_are_the_part">Eres parte de la innovación \ny la eficiencia</string>
     <string name="whole_community">Toda una comunidad de viajeros a tu disposición.</string>
     <string name="are_you_win">"Ganas mandando! \nAhora... \nGanas llevando! "</string>
-    <string name="safe_travller">Sé un viajero SEFUE inscríbete aquí.</string>
+    <string name="safe_travller">Sé un viajero</string>
+    <string name="safe_travller1">inscríbete aquí.</string>
+    <string name="sefue"> SEFUE </string>
     <string name="what_you_send">"¿Y hoy qué vas a mandar? "</string>
     <string name="response">Disponibles 7x24</string>
     <string name="make_your_orders">HAZ TUS MANDADOS</string>
@@ -72,5 +75,40 @@
 
     <!-- Key for places and route draw -->
     <string name="place_api_key">AIzaSyC4Eg_qGdkZrcW-td6QsmJAk2g4nzPaat0</string>
+
+    <string name="please_wait">Please wait...</string>
+    <string name="network_failure">Sorry! Not connected to internet</string>
+    <string name="please_enter_email">Please enter email</string>
+    <string name="please_enter_user_name">Please enter user name</string>
+    <string name="please_enter_password">Please enter password</string>
+    <string name="please_enter_confirm_password">Please enter confirm password</string>
+    <string name="phone_number">NÚMERO TELEFÓNICO</string>
+    <string name="please_enter_phone_number">Please enter phone number</string>
+    <string name="invalid_otp">Invalid otp</string>
+    <string name="password_dont_matched">password doesn\'t matched</string>
+    <string name="wrong_email">invalid email</string>
+    <string name="update">actualizar</string>
+    <string name="select_image_from">Seleccionar imagen de</string>
+    <string name="camera">Cámara</string>
+    <string name="gallery">Galería</string>
+    <string name="profile_upadte_successfully">actualizar correctamente</string>
+    <string name="required">requerido</string>
+    <string name="forgot_my_password">Olvidé mi contraseña</string>
+    <string name="forgot_password2">Has olvidado tu contraseña</string>
+    <string name="submit">enviar</string>
+    <string name="please_check_your_email">Hemos enviado un enlace al correo electrónico para cambiar su contraseña, por favor revise su correo electrónico
+</string>
+
+
+    <string name="fb_login_protocol_scheme">fb2465870793657332</string>
+    <string name="facebook_app_id">2465870793657332</string>
+    <string name="address">Dirección</string>
+    <string name="add">Agregar</string>
+    <string name="please_select_document_type">Seleccione el tipo de documento</string>
+
+
+    <string-array name="pick">
+        <item>Tipo de documento</item>
+    </string-array>
 
 </resources>

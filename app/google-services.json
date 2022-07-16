@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "634391610620",
+    "project_id": "sefue-24367",
+    "storage_bucket": "sefue-24367.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:634391610620:android:ee1a8ec63cc779b4bd8379",
+        "android_client_info": {
+          "package_name": "com.sefueemisor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "634391610620-gss28dpb4tmnbggq4v59brk4qh2oi79j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sefueemisor",
+            "certificate_hash": "4a54a0201b383cca1b8c056aecfb715e2f24fe05"
+          }
+        },
+        {
+          "client_id": "634391610620-qr89p07rka9kh9ahc7lo4ng823napflq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIbTSM_7UIX9rUtJQ9-ssAvAZkeQCSimY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "634391610620-qr89p07rka9kh9ahc7lo4ng823napflq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

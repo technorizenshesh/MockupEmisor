@@ -43,19 +43,41 @@
 
                         android:src="@drawable/ic_back" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_centerInParent="true"
                         android:layout_marginEnd="@dimen/_15sdp"
                         android:layout_marginBottom="@dimen/_15sdp"
                         android:layout_toLeftOf="@+id/btHelp"
-                        android:fontFamily="@font/irc_demi"
-                        android:text="CALIFICA TU VIAJERO SEFU"
-                        android:textColor="@color/color_btn"
-                        android:textSize="@dimen/_13sdp"
-                        android:textStyle="bold" />
+                        android:gravity="center"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/irc_demi"
+                            android:text="CALIFICA TU VIAJERO"
+                            android:textColor="@color/color_btn"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sofachrome_italic"
+                            android:text=" SEFUE "
+                            android:textColor="#00F5FF"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold" />
+
+
+
+
+                    </LinearLayout>
+
 
 
                     <androidx.cardview.widget.CardView
@@ -468,18 +490,43 @@ confiable"
                     android:layout_height="@dimen/_35sdp"
                     android:layout_marginVertical="20dp"
                     app:cardCornerRadius="@dimen/_30sdp">
-
-                    <TextView
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:orientation="horizontal"
                         android:background="@color/color_black_light"
-                        android:elevation="5dp"
                         android:gravity="center"
-                        android:text="NOVEDADES DEL MANDADO SEFUE"
-                        android:textAlignment="center"
-                        android:textColor="@color/color_btn"
-                        android:textSize="@dimen/_14sdp"
-                        android:textStyle="bold" />
+                        >
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:elevation="5dp"
+                            android:gravity="center"
+                            android:text="NOVEDADES DEL MANDADO"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/irc_demi"
+                            android:textColor="@color/color_btn"
+                            android:textSize="@dimen/_10sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:elevation="5dp"
+                            android:gravity="center"
+                            android:text=" SEFUE"
+                            android:fontFamily="@font/sofachrome_italic"
+                            android:textAlignment="center"
+                            android:textColor="@color/color_btn"
+                            android:textSize="@dimen/_10sdp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+
 
                 </androidx.cardview.widget.CardView>
 
@@ -490,17 +537,45 @@ confiable"
                     android:layout_height="@dimen/_35sdp"
                     app:cardCornerRadius="@dimen/_30sdp">
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:orientation="horizontal"
                         android:background="@color/color_black_light"
-                        android:elevation="5dp"
                         android:gravity="center"
-                        android:text="CALIFICAR MANDADO SEFUE"
-                        android:textAlignment="center"
-                        android:textColor="@color/color_btn"
-                        android:textSize="@dimen/_14sdp"
-                        android:textStyle="bold" />
+                        >
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:elevation="5dp"
+                            android:gravity="center"
+                            android:text="CALIFICAR MANDADO"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/irc_demi"
+                            android:textColor="@color/color_btn"
+                            android:textSize="@dimen/_10sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:elevation="5dp"
+                            android:gravity="center"
+                            android:text=" SEFUE"
+                            android:fontFamily="@font/sofachrome_italic"
+                            android:textAlignment="center"
+                            android:textColor="@color/color_btn"
+                            android:textSize="@dimen/_10sdp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+
+
+
 
                 </androidx.cardview.widget.CardView>
 

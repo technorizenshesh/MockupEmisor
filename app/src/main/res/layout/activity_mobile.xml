@@ -83,17 +83,21 @@
                 android:background="@drawable/rounded_white_gray_bg">
 
                <EditText
-                   android:id="@+id/edMobile"
+                   android:id="@+id/etMobile"
                    android:layout_width="match_parent"
                    android:layout_height="match_parent"
                    android:textSize="@dimen/_12sdp"
                    android:paddingStart="@dimen/_10sdp"
                    android:textColor="@color/black"
+                   android:textColorHint="@color/black"
                    android:fontFamily="@font/irc_demi"
                    android:background="@null"
                    android:inputType="number"
                    android:singleLine="true"
-                   android:text="323-233-33-234"
+                   android:paddingEnd="@dimen/_10sdp"
+                   android:text=""
+                   android:hint="@string/phone_number"
+                   android:maxLength="11"
                    />
 
             </LinearLayout>

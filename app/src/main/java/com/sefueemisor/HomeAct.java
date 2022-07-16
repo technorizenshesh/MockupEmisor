@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -11,8 +12,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.databinding.DataBindingUtil;
 
+import com.bumptech.glide.Glide;
 import com.google.android.material.navigation.NavigationView;
 import com.sefueemisor.databinding.ActivityHomeBinding;
+import com.sefueemisor.utils.DataManager;
+
+import org.w3c.dom.Text;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class HomeAct extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     ActivityHomeBinding binding;
@@ -30,6 +37,12 @@ public class HomeAct extends AppCompatActivity implements NavigationView.OnNavig
         binding.navView.setItemIconTintList(null);
       //  LoadNavMenu(R.menu.menu_drawer);
 
+
+
+        binding.dashboradHome.btnNext.setOnClickListener(v -> {
+            startActivity(new Intent(this,ErrandSecondAct.class));
+        });
+
         binding.dashboradHome.drawHead.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,6 +55,8 @@ public class HomeAct extends AppCompatActivity implements NavigationView.OnNavig
         });
 
         binding.navView.setNavigationItemSelectedListener(this);
+
+
 
 
     }
@@ -93,4 +108,23 @@ public class HomeAct extends AppCompatActivity implements NavigationView.OnNavig
     }
 
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if(DataManager.getInstance().getUserData(HomeAct.this)!=null){
+            View header = binding.navView.getHeaderView(0);
+            TextView tvUser = header.findViewById(R.id.tv_Username);
+            CircleImageView img = header.findViewById(R.id.profile_image);
+
+            tvUser.setText(DataManager.getInstance().getUserData(HomeAct.this).getResult().getUserName());
+
+            Glide.with(HomeAct.this)
+                    .load(DataManager.getInstance().getUserData(HomeAct.this).getResult().getImage())
+                    .centerCrop()
+                    .error(R.drawable.user_default)
+                    .into(img);
+
+        }
+
+    }
 }

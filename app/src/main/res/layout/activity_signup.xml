@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/bg_two">
@@ -67,12 +68,16 @@
                 app:cardElevation="@dimen/_2sdp">
 
                 <EditText
+                    android:id="@+id/etEmail"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@null"
                     android:fontFamily="@font/irc_demi"
                     android:hint="Correo electrónico"
+                    android:inputType="textEmailAddress"
                     android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:singleLine="true"
                     android:textColor="@color/black"
                     android:textColorHint="@color/black"
                     android:textSize="@dimen/_12sdp" />
@@ -88,12 +93,16 @@
                 app:cardElevation="@dimen/_2sdp">
 
                 <EditText
+                    android:id="@+id/etName"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@null"
                     android:fontFamily="@font/irc_demi"
                     android:hint="@string/name_surname"
+                    android:inputType="text"
                     android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:singleLine="true"
                     android:textColor="@color/black"
                     android:textColorHint="@color/black"
                     android:textSize="@dimen/_12sdp" />
@@ -108,17 +117,38 @@
                 app:cardCornerRadius="@dimen/_30sdp"
                 app:cardElevation="@dimen/_2sdp">
 
-                <EditText
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@null"
-                    android:fontFamily="@font/irc_demi"
-                    android:hint="@string/password"
-                    android:paddingStart="@dimen/_10sdp"
-                    android:textColor="@color/black"
-                    android:textColorHint="@color/black"
-                    android:textSize="@dimen/_12sdp" />
+                    android:layout_height="match_parent">
 
+                    <EditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:fontFamily="@font/irc_demi"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                    <ImageView
+                        android:id="@+id/show_pass_btn"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:onClick="ShowHidePass"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:src="@drawable/blind"/>
+
+
+                </RelativeLayout>
 
             </androidx.cardview.widget.CardView>
 
@@ -129,16 +159,38 @@
                 app:cardCornerRadius="@dimen/_30sdp"
                 app:cardElevation="@dimen/_2sdp">
 
-                <EditText
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@null"
-                    android:fontFamily="@font/irc_demi"
-                    android:hint="@string/repeat_password"
-                    android:paddingStart="@dimen/_10sdp"
-                    android:textColor="@color/black"
-                    android:textColorHint="@color/black"
-                    android:textSize="@dimen/_12sdp" />
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/etConPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:fontFamily="@font/irc_demi"
+                        android:hint="@string/repeat_password"
+                        android:inputType="textPassword"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/_12sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:singleLine="true"
+                        />
+
+
+                    <ImageView
+                        android:id="@+id/show_pass_btn11"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:onClick="ShowHidePass11"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:src="@drawable/blind" />
+                </RelativeLayout>
+
 
 
             </androidx.cardview.widget.CardView>
@@ -173,6 +225,7 @@
 
 
                 <LinearLayout
+                    android:id="@+id/btnFacebook"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -189,6 +242,7 @@
 
 
                 <LinearLayout
+                    android:id="@+id/btnGplus"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"

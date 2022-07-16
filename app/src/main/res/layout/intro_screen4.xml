@@ -24,6 +24,17 @@
         android:fontFamily="@font/irc_demi"
         />
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginStart="@dimen/_5sdp"
+    android:layout_marginEnd="@dimen/_5sdp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginTop="@dimen/_10sdp"
+
+    >
 
     <TextView
         android:layout_width="wrap_content"
@@ -32,10 +43,35 @@
         android:gravity="center_horizontal"
         android:fontFamily="@font/irc_demi"
         android:textColor="#BDC2CC"
+        android:textSize="@dimen/_11sdp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" SEFUE "
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/sofachrome_italic"
+        android:textColor="#BDC2CC"
         android:textSize="@dimen/_12sdp"
-        android:layout_marginStart="@dimen/_10sdp"
-        android:layout_marginEnd="@dimen/_10sdp"
-        android:layout_gravity="center"
-        android:layout_marginTop="@dimen/_10sdp"/>
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/safe_travller1"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/irc_demi"
+        android:textColor="#BDC2CC"
+        android:textSize="@dimen/_11sdp"
+        />
+
+
+
+
+
+</LinearLayout>
+
 
 </LinearLayout>

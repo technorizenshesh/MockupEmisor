@@ -92,7 +92,7 @@ public class WelcomeAct extends AppCompatActivity {
         if (i < screens.length) {
             binding.viewPager.setCurrentItem(i);
         } else {
-            startActivity(new Intent(WelcomeAct.this, SignupAct.class));
+            startActivity(new Intent(WelcomeAct.this, LandingAct.class));
             finish();
         }
     }

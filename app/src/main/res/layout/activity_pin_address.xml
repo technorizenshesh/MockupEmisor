@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activities.PinLocationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/rlMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_black_light"
+            android:padding="@dimen/_5sdp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/sofachrome_regular"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/address"
+                android:textColor="@color/color_btn"
+                android:textSize="@dimen/_14sdp" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@+id/rlMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <fragment
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:id="@+id/frg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_20sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:layout_gravity="start"
+                    android:gravity="start"
+                    android:padding="@dimen/_10sdp"
+                    />
+            </androidx.cardview.widget.CardView>
+
+
+            <ImageView
+                android:id="@+id/img_marker"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:src="@drawable/ic_pin"
+                android:layout_centerInParent="true"
+                android:paddingBottom="@dimen/_10sdp"
+                app:tint="@color/color_blue" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/_20sdp"
+                app:cardCornerRadius="@dimen/_7sdp"
+                app:cardElevation="@dimen/_5sdp"
+                android:padding="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnAddAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_black_light"
+                    android:text="@string/add"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/color_btn"
+                    android:fontFamily="@font/sofachrome_regular"
+                    android:textSize="@dimen/_12sdp"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

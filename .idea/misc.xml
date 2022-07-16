@@ -5,6 +5,8 @@
       <map>
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.21203703703703702" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/drawable/active_dot.xml" value="0.21203703703703702" />
+        <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/drawable/circle_blue.xml" value="0.19054054054054054" />
+        <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/drawable/circle_dark_blue.xml" value="0.19054054054054054" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/drawable/doted_line.xml" value="0.15" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/drawable/ic_menu.xml" value="0.2046875" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/drawable/non_active_dot.xml" value="0.21203703703703702" />
@@ -14,8 +16,10 @@
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/drawable/rounded_light_black_bg.xml" value="1.0892857142857142" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/drawable/rounded_white_gray_bg.xml" value="0.21574074074074073" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/drawable/rounded_white_gray_second_bg.xml" value="0.21203703703703702" />
+        <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/drawable/rounded_white_grey_two.xml" value="0.19054054054054054" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/drawable/rounded_white_two_bg.xml" value="0.17466666666666666" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/drawable/rounded_white_two_corner_bg.xml" value="0.19054054054054054" />
+        <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/activity_account_update.xml" value="0.17657657657657658" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/activity_card.xml" value="0.1814814814814815" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/activity_choose_travller.xml" value="0.15855855855855855" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/activity_command.xml" value="0.1814814814814815" />
@@ -27,32 +31,40 @@
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/activity_errand_second.xml" value="0.1398148148148148" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/activity_find_traveller.xml" value="0.17657657657657658" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/activity_follow_command.xml" value="0.17657657657657658" />
+        <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/activity_forgot_pass.xml" value="0.11171171171171171" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/activity_give_rate.xml" value="0.17657657657657658" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/activity_home.xml" value="0.1" />
+        <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/activity_landing.xml" value="0.12182971014492754" />
+        <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/activity_login.xml" value="0.16306306306306306" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/activity_mobile.xml" value="0.20416666666666666" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/activity_mobile_verify.xml" value="0.20416666666666666" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/activity_order_track.xml" value="0.17657657657657658" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/activity_password.xml" value="0.20416666666666666" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/activity_payment_method_two.xml" value="0.1814814814814815" />
+        <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/activity_pin_address.xml" value="0.10099637681159421" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/activity_pro_detail.xml" value="0.1814814814814815" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/activity_profile.xml" value="0.20416666666666666" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/activity_send.xml" value="0.20416666666666666" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/activity_signup.xml" value="0.20416666666666666" />
+        <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/activity_splash.xml" value="0.1381340579710145" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/activity_traveller_detail.xml" value="0.15855855855855855" />
+        <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/activity_webview.xml" value="0.17657657657657658" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/activity_welcome.xml" value="0.20416666666666666" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/actvity_help.xml" value="0.16" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/actvity_my_errand.xml" value="0.18" />
-        <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/actvity_order_verify.xml" value="0.17657657657657658" />
+        <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/actvity_order_verify.xml" value="0.25" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/actvity_payment_method.xml" value="0.1814814814814815" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/app_bar_home.xml" value="0.1" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/content_main.xml" value="0.1" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/dialog_call_trave.xml" value="0.17657657657657658" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/dialog_cancel_service.xml" value="0.17657657657657658" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/dialog_delivered.xml" value="0.1" />
+        <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/dialog_loading.xml" value="0.11531531531531532" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/dialog_news.xml" value="0.17657657657657658" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/dialog_one.xml" value="0.12" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/dialog_service_not_found.xml" value="0.15855855855855855" />
+        <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/dialog_show_image_selection.xml" value="0.17657657657657658" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/dialog_two.xml" value="0.17657657657657658" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/dialog_validate.xml" value="0.17657657657657658" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/dialog_waiting_list.xml" value="0.15855855855855855" />
@@ -63,6 +75,7 @@
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/intro_screen3.xml" value="0.20416666666666666" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/intro_screen4.xml" value="0.20416666666666666" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/item_errands.xml" value="0.1814814814814815" />
+        <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/item_spinner.xml" value="0.1" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/item_traveller.xml" value="0.15855855855855855" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/nav_header_home.xml" value="0.1" />
         <entry key="..\:/MyProjects/MockupEmisor/app/src/main/res/layout/nav_header_main.xml" value="0.1" />
